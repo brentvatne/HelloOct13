@@ -6,6 +6,7 @@
       }
     },
     "development": {
+      "extends": "release",
       "distribution": "internal",
       "android": {
         "gradleCommand": ":app:assembleDebug"
