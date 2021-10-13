@@ -13,12 +13,51 @@ PODS:
     - ExpoModulesCore
   - EXFont (10.0.1):
     - ExpoModulesCore
+  - EXJSONUtils (0.2.0)
   - EXKeepAwake (10.0.0):
     - ExpoModulesCore
+  - EXManifests (0.2.1):
+    - EXJSONUtils
   - Expo (43.0.0-beta.3):
     - ExpoModulesCore
+  - expo-dev-client (0.6.0):
+    - EXManifests
+    - expo-dev-launcher
+    - expo-dev-menu
+    - expo-dev-menu-interface
+    - EXUpdatesInterface
+  - expo-dev-launcher (0.8.1):
+    - EXManifests
+    - expo-dev-launcher/Main (= 0.8.1)
+    - expo-dev-menu-interface
+    - EXUpdatesInterface
+    - React-Core
+  - expo-dev-launcher/Main (0.8.1):
+    - EXManifests
+    - expo-dev-launcher/Unsafe
+    - expo-dev-menu-interface
+    - EXUpdatesInterface
+    - React-Core
+  - expo-dev-launcher/Unsafe (0.8.1):
+    - EXManifests
+    - expo-dev-menu-interface
+    - EXUpdatesInterface
+    - React-Core
+  - expo-dev-menu (0.8.2):
+    - expo-dev-menu-interface
+    - expo-dev-menu/Main (= 0.8.2)
+    - React-Core
+  - expo-dev-menu-interface (0.4.1)
+  - expo-dev-menu/Main (0.8.2):
+    - expo-dev-menu-interface
+    - expo-dev-menu/Vendored
+    - React-Core
+  - expo-dev-menu/Vendored (0.8.2):
+    - expo-dev-menu-interface
+    - React-Core
   - ExpoModulesCore (0.4.2):
     - React-Core
+  - EXUpdatesInterface (0.4.0)
   - FBLazyVector (0.66.0)
   - FBReactNativeSpec (0.66.0):
     - RCT-Folly (= 2021.06.28.00-v2)
@@ -303,9 +342,16 @@ DEPENDENCIES:
   - EXErrorRecovery (from `../node_modules/expo-error-recovery/ios`)
   - EXFileSystem (from `../node_modules/expo-file-system/ios`)
   - EXFont (from `../node_modules/expo-font/ios`)
+  - EXJSONUtils (from `../node_modules/expo-json-utils/ios`)
   - EXKeepAwake (from `../node_modules/expo-keep-awake/ios`)
+  - EXManifests (from `../node_modules/expo-manifests/ios`)
   - Expo (from `../node_modules/expo/ios`)
+  - expo-dev-client (from `../node_modules/expo-dev-client`)
+  - expo-dev-launcher (from `../node_modules/expo-dev-launcher`)
+  - expo-dev-menu (from `../node_modules/expo-dev-menu`)
+  - expo-dev-menu-interface (from `../node_modules/expo-dev-menu-interface`)
   - ExpoModulesCore (from `../node_modules/expo-modules-core/ios`)
+  - EXUpdatesInterface (from `../node_modules/expo-updates-interface/ios`)
   - FBLazyVector (from `../node_modules/react-native/Libraries/FBLazyVector`)
   - FBReactNativeSpec (from `../node_modules/react-native/React/FBReactNativeSpec`)
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
@@ -358,12 +404,26 @@ EXTERNAL SOURCES:
     :path: "../node_modules/expo-file-system/ios"
   EXFont:
     :path: "../node_modules/expo-font/ios"
+  EXJSONUtils:
+    :path: "../node_modules/expo-json-utils/ios"
   EXKeepAwake:
     :path: "../node_modules/expo-keep-awake/ios"
+  EXManifests:
+    :path: "../node_modules/expo-manifests/ios"
   Expo:
     :path: "../node_modules/expo/ios"
+  expo-dev-client:
+    :path: "../node_modules/expo-dev-client"
+  expo-dev-launcher:
+    :path: "../node_modules/expo-dev-launcher"
+  expo-dev-menu:
+    :path: "../node_modules/expo-dev-menu"
+  expo-dev-menu-interface:
+    :path: "../node_modules/expo-dev-menu-interface"
   ExpoModulesCore:
     :path: "../node_modules/expo-modules-core/ios"
+  EXUpdatesInterface:
+    :path: "../node_modules/expo-updates-interface/ios"
   FBLazyVector:
     :path: "../node_modules/react-native/Libraries/FBLazyVector"
   FBReactNativeSpec:
@@ -430,9 +490,16 @@ SPEC CHECKSUMS:
   EXErrorRecovery: 6bcc12e006d5484753190ce66f2cd4063d27f50b
   EXFileSystem: f569c199d08a69b8bd2938b4affca6a3dd50de7a
   EXFont: cbaf3549f376b3484ad379a1034f468a78daeb61
+  EXJSONUtils: f515cf71710855d7ba5bfc6752af3b9a6f6aad01
   EXKeepAwake: 8aa32396a5972d26e75e538603aad0f032396503
+  EXManifests: fdbb8a0c2cd5fc4acc1ae90b55ce91617aba9365
   Expo: 23ed30f225511b93fa6a0c14d9a3208d6b749060
+  expo-dev-client: 97a9589d2ea0325a8dd4dff284fe3a4b9166bbce
+  expo-dev-launcher: 7a90ad1519263eda3e8675bf6712f2f89f8fe2a9
+  expo-dev-menu: 5b0593d3ad5f32e92e363f4cc061fe70666da31f
+  expo-dev-menu-interface: 508467f2ba2aedda7a44e5080cc1e9a43ab7375e
   ExpoModulesCore: 39fb1eacac048e4acbad9661b82512aaf1c6729e
+  EXUpdatesInterface: e1c01b4f5ec76bd1d6cc714938f9edf5ef6379b9
   FBLazyVector: 6816ca39e1cc8beffd2a96783f518296789d1c48
   FBReactNativeSpec: 3b1e86618e902743fde35b40cf9ebd100fd655b7
   fmt: ff9d55029c625d3757ed641535fd4a75fedc7ce9
@@ -463,6 +530,6 @@ SPEC CHECKSUMS:
   ReactCommon: eb059748e842a1a86025ebbd4ac9d99e74492f88
   Yoga: c11abbf5809216c91fcd62f5571078b83d9b6720
 
-PODFILE CHECKSUM: 245bddf5d1d7563ad4046ca2caf477a1b5027d59
+PODFILE CHECKSUM: 60ad3f5f8915d52921592e35c843be9280f5fec3
 
 COCOAPODS: 1.11.2

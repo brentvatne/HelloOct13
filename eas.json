@@ -2,7 +2,7 @@
   "build": {
     "release": {
       "ios": {
-        "image": "latest"
+        "image": "macos-big-sur-11.4-xcode-13.0"
       }
     },
     "development": {
