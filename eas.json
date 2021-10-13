@@ -1,6 +1,10 @@
 {
   "build": {
-    "release": {},
+    "release": {
+      "ios": {
+        "image": "latest"
+      }
+    },
     "development": {
       "distribution": "internal",
       "android": {
