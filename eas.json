@@ -8,12 +8,7 @@
     "development": {
       "extends": "release",
       "distribution": "internal",
-      "android": {
-        "gradleCommand": ":app:assembleDebug"
-      },
-      "ios": {
-        "buildConfiguration": "Debug"
-      }
+      "developmentClient": true
     }
   },
   "submit": {
