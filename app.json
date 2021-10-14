@@ -2,8 +2,6 @@
   "name": "HelloOct13",
   "displayName": "HelloOct13",
   "expo": {
-    "ios": {
-      "bundleIdentifier": "org.reactjs.native.example.HelloOct13"
-    }
+    "owners": "notbrent"
   }
 }
