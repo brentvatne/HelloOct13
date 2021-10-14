@@ -29,4 +29,5 @@ jobs:
         run: yarn install --frozen-lockfile
 
       - name: Build on EAS
-        run: npx eas-cli build --platform ios --non-interactive
+        run: npx eas-cli build --profile development --platform ios --non-interactive
+        # run: npx eas-cli build --auto-submit --platform ios --non-interactive
