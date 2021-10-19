@@ -5,7 +5,7 @@ import * as Device from 'expo-device';
 const App = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.name}>{Device.deviceName}</Text>
+      <Text style={styles.name}>{Device.deviceName}!!!!!</Text>
     </View>
   );
 };
